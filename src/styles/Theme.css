@@ -1,0 +1,17 @@
+.theme-dropdown {
+    float: right;
+    margin: 0 150px;
+  }
+  
+.theme-selector {
+    width: 150px;
+    font-size: 16px; 
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .theme-dropdown {
+        margin: 0 10px;
+    }
+}
+  

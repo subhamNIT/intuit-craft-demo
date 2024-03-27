@@ -1,0 +1,90 @@
+/* General styles */
+.events-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 150px;  
+  border: 2px solid black;
+  padding: 10px;
+}
+
+/* Light Mode */
+.events-container.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+.events-container.dark {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* Specific to events list and selected events */
+.events-list, .selected-events {
+  width: 48%;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.events-container.dark .events-list,
+.events-container.dark .selected-events {
+  border: 2px solid white;
+}
+
+/* Events container text styles */
+.events-container-text {
+  justify-content: center;
+  text-decoration: underline;
+  display: flex;
+}
+
+/* Events cards container styles */
+.events-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+/* No events container styles */
+.no-events-container {
+  text-align: center;
+  padding: 100px;
+}
+
+/* Event button container styles */
+.event-button-container {
+  padding-top: 12px;
+  height: 41px;
+}
+
+/* Media queries */
+@media screen and (max-width: 767px) {
+  .events-container {
+    display: block;
+    justify-content: space-between;
+    margin: 0;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  .events-cards-container {
+    grid-template-columns: 1fr;
+  }
+  .events-list, .selected-events  {
+    width: auto;
+    justify-content: center;
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .events-container {
+    margin: 0;
+  }
+  .events-list, .selected-events {
+    width: 48%;
+  }
+  .events-cards-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}

@@ -1,0 +1,39 @@
+.error-page {
+  display: flex;
+}
+
+.error-container {
+  align-self: center;
+}
+
+.error-container-header {
+  font-size: 100px;
+  color: #313167;
+  text-align: center;
+}
+
+.error-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.error-container-message {
+  font-size: 30px;
+  color: #313167;
+  text-align: center;
+}
+
+.error-container {
+  justify-content: center;
+  display: grid;
+}
+
+@media screen and (max-width: 1024px) {
+  .error-page {
+      display: block;
+  }
+  .error-image {
+      width: 400px;
+      height: 400px;
+  }
+}

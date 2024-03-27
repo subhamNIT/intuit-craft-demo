@@ -1,0 +1,88 @@
+/* Event card button styles */
+.event-card button {
+    position: absolute;
+    padding: 10px;
+    background-color: #438c43;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/* Event details styles */
+.event-details {
+    flex-grow: 1;
+    width: 60%;
+  }
+  
+/* Conflicting event card button styles */
+.event-card button.conflict {
+    background: #e1d7d7;
+    cursor: auto;
+}
+  
+/* Conflicting event card styles */
+.event-card.conflict {
+    background-color: #b8aeae;
+    opacity: 0.5;
+    cursor: auto;
+}
+  
+/* Selected event button styles */
+.selected-event button {
+    position: absolute;
+    padding: 10px;
+    background-color: #eca8a8;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Event name and category styles */
+.event-name, .event-category {
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    display: block;
+    width: 100%;
+}
+
+/* Event card styles */
+.event-card, .selected-event {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4a8598;
+    width: 310px;
+    height: 160px;
+    border-radius: 30px;
+}
+
+/* Category initial styles */
+.category-initial {
+    font-size: 60px;
+    margin-right: 25px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    border-right: 2px solid black;
+    padding: 20px;
+    width: 13%;
+}
+
+/* Event name styles */
+.event-name {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .event-card, .selected-event {
+        width: 288px;
+    }
+}
