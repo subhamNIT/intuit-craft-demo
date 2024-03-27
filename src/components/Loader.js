@@ -25,4 +25,9 @@ Loader.propTypes = {
 };
 
 
+Loader.defaultProps = {
+    theme: "light"
+}
+
 export default Loader;
+

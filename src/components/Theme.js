@@ -31,4 +31,10 @@ Theme.propTypes = {
     theme: PropTypes.string.isRequired
 };
 
+Theme.defaultProps = {
+    theme: "light"
+}
+
 export default Theme;
+
+

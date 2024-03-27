@@ -27,8 +27,13 @@ const Modal = ({setShowMaxEventAlert, modalMessage, theme}) => {
 
 Modal.propTypes = {
     setShowMaxEventAlert: PropTypes.func.isRequired, 
-    modalMessage: PropTypes.string
+    modalMessage: PropTypes.string,
+    theme: PropTypes.string.isRequired
 };
+
+Modal.defaultProps = {
+    theme: "light"
+}
 
 
 export default Modal;

@@ -79,5 +79,9 @@ Dashboard.propTypes = {
     theme: PropTypes.string.isRequired
 };
 
+Dashboard.defaultProps = {
+    theme: "light"
+}
+
 
 export default Dashboard;
