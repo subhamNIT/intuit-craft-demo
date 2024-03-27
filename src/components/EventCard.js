@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 
 const EventCard = memo(({ event, isEventConflict, handleSelectEvent, category }) => {
-    console.log(event, isEventConflict, handleSelectEvent, category )
 
     const cardClassName = `${category === "all" ? (isEventConflict(event) ? "event-card conflict" : "event-card") : "selected-event"}`;
 
@@ -68,3 +67,4 @@ EventCard.propTypes = {
 };
 
 export default EventCard;
+
