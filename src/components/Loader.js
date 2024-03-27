@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 import loaderGif from "../assets/loader.gif";
 import { CONSTANTS } from "../constants/constants";
 
-const Loader = ({message}) => {
+const Loader = ({message,theme}) => {
     return (
-        <div className="loader-overlay">
+        <div className={`loader-overlay ${theme}`}>
             <div className="loader">
                 <img src={loaderGif} alt="Loading..." />
-                <div>
+                <div className={`loader-text ${theme}`}>
                     <strong>
                         {message ? message : CONSTANTS.fallbackLoaderMessage}
                     </strong>
@@ -20,7 +20,8 @@ const Loader = ({message}) => {
 }
 
 Loader.propTypes = { 
-  message: PropTypes.string
+  message: PropTypes.string,
+  theme: PropTypes.string.isRequired,
 };
 
 

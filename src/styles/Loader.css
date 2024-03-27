@@ -10,3 +10,15 @@
     justify-content: center;
     align-items: center;
 }
+
+.loader-text {
+    text-align: center;
+}
+
+.loader-overlay.dark {
+    background-color: black;
+}
+
+.loader-text.dark {
+    color: #6e6e6e;
+}

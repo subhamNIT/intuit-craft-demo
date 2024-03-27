@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import mockData from "./constants/api-mock";
@@ -68,7 +69,7 @@ const App = () => {
     return (
         <div className="app-container">
             <div className={`App ${theme}`}>
-                {isLoading && <Loader message={loaderMessage} />}
+                {isLoading && <Loader message={loaderMessage} theme={theme} />}
                 {error && <ErrorPage message={error} />}
                 {!isLoading && !error && 
                 <div className="dashboard-container">
