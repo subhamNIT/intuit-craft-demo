@@ -44,8 +44,8 @@ const EventCard = memo(({ event, isEventConflict, handleSelectEvent, category })
                 {event.event_category.charAt(0)}
             </div>
             <div className="event-details">
-                <div>
-                    <span title={event?.event_name} className="event-name"><strong>{event.event_name}</strong></span>
+                <div title={event?.event_name} className="event-name">
+                    <strong>{event.event_name}</strong>
                 </div>
                 <div className="event-category">
                     ({event?.event_category})
